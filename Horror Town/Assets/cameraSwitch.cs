@@ -5,7 +5,7 @@ using UnityEngine;
 public class cameraSwitch : MonoBehaviour
 {
 
-    public Camera cam1, cam2;
+    public Camera cam1, cam2,cam3;
 
    
     // Start is called before the first frame update
@@ -13,6 +13,7 @@ public class cameraSwitch : MonoBehaviour
     {
         cam1.enabled = true;
         cam2.enabled = false;
+        cam3.enabled = false;
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class cameraSwitch : MonoBehaviour
     public void Cam1On()
     {
         cam1.enabled = true;
-        cam1.tag = "Main Camera";
+       
 
     }
 
@@ -38,7 +39,7 @@ public class cameraSwitch : MonoBehaviour
     public void Cam2On()
     {
         cam2.enabled = true;
-        cam2.tag = "Main Camera";
+    
 
 
     }
@@ -48,4 +49,17 @@ public class cameraSwitch : MonoBehaviour
 
         cam2.enabled = false;
     }
+
+   public void Cam3On()
+   {
+       cam3.enabled = true;
+
+   }
+
+
+   public void Cam3Off()
+   {
+
+       cam3.enabled = false;
+   }
 }

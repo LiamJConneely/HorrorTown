@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="cameraSwitch.cs" t="Include" />
         <e p="changeCamera.cs" t="Include" />
+        <e p="getoffLadder.cs" t="Include" />
+        <e p="ladder.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="mouseMovement.cs" t="Include" />
         </e>

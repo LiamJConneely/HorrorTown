@@ -27,6 +27,7 @@ public class changeCamera : MonoBehaviour
             {
                 cams.Cam1On();
                 cams.Cam2Off();
+                cams.Cam3Off();
 
             }
           
@@ -37,10 +38,22 @@ public class changeCamera : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
+                
                 cams.Cam2On();
                 cams.Cam1Off();
+                cams.Cam3Off();
             }
          
+        }
+
+        if (methodname == "Camera 3")
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                cams.Cam3On();
+                cams.Cam1Off();
+                cams.Cam2Off();
+            }
         }
     }
 }
