@@ -55,5 +55,16 @@ public class changeCamera : MonoBehaviour
                 cams.Cam2Off();
             }
         }
+        
+        if (methodname == "Camera 4")
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                cams.Cam4On();
+                cams.Cam1Off();
+                cams.Cam2Off();
+                cams.Cam3Off();
+            }
+        }
     }
 }
